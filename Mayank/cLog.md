@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 int next_permutation(int n, char **s)
 {
-  
-    for (int i = n - 1; i > 0; i--)
+  for (int i = n - 1; i > 0; i--)
         if (strcmp(s[i], s[i - 1]) > 0)
         {
             int j = i + 1;
